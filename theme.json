@@ -1,0 +1,114 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#FFFFFF",
+					"name": "White",
+					"slug": "base"
+				},
+				{
+					"color": "#232323",
+					"name": "Ink",
+					"slug": "contrast"
+				},
+				{
+					"color": "#F7C83B",
+					"name": "Yellow",
+					"slug": "accent-1"
+				},
+				{
+					"color": "#124D3E",
+					"name": "Dark Green",
+					"slug": "accent-2"
+				},
+				{
+					"color": "#EAECED",
+					"name": "Light Gray",
+					"slug": "accent-3"
+				},
+				{
+					"color": "#575757",
+					"name": "Gray",
+					"slug": "accent-4"
+				},
+				{
+					"color": "#F7F7F7",
+					"name": "Off White",
+					"slug": "accent-5"
+				},
+				{
+					"color": "color-mix(in srgb, currentColor 20%, transparent)",
+					"name": "Border",
+					"slug": "accent-6"
+				}
+			]
+		},
+		"custom": {
+			"color": {
+				"brand-green": "#2F8D3C"
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "700",
+					"letterSpacing": "-0.02em"
+				}
+			},
+			"button": {
+				"border": {
+					"radius": "4px"
+				},
+				"color": {
+					"background": "var:preset|color|accent-2",
+					"text": "var:preset|color|base"
+				},
+				"typography": {
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "600"
+				},
+				":hover": {
+					"color": {
+						"background": "#0B3329",
+						"text": "var:preset|color|base"
+					}
+				},
+				":focus": {
+					"outline": {
+						"color": "var:preset|color|accent-2",
+						"offset": "2px",
+						"style": "solid",
+						"width": "2px"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/button": {
+				"variations": {
+					"outline": {
+						"color": {
+							"text": "var(--lv-button-fill, var(--wp--preset--color--accent-2))"
+						}
+					}
+				}
+			},
+			"core/search": {
+				"css": "& .wp-block-search__input{border-radius:3.125rem;padding-left:1.5625rem;padding-right:1.5625rem;}"
+			},
+			"core/post-comments-form": {
+				"css": "& input[type=checkbox]{margin:0 .2rem 0 0 !important;} & label {font-size: var(--wp--preset--font-size--small); }"
+			}
+		},
+		"css": "input[type=text],input[type=email],input[type=search],input[type=url],input[type=tel],input[type=number],input[type=password],textarea{background-color:var(--lv-field-fill,color-mix(in srgb,var(--wp--preset--color--base) 60%,transparent));border:1px solid color-mix(in srgb,currentColor 70%,transparent);color:inherit;} :where(input[type=text],input[type=email],input[type=search],input[type=url],input[type=tel],input[type=number],input[type=password],textarea){border-radius:4px;} ::placeholder{color:color-mix(in srgb,currentColor 85%,transparent);opacity:1;} :is(input[type=text],input[type=email],input[type=search],input[type=url],input[type=tel],input[type=number],input[type=password],textarea):focus-visible{border-color:currentColor;outline:2px solid currentColor;outline-offset:2px;}"
+	}
+}
