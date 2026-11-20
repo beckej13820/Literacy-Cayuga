@@ -10,26 +10,13 @@ A child theme of Twenty Twenty-Five for Literacy Volunteers, with a green and ye
 
 == Description ==
 
-Literacy Volunteers is a block theme built on Twenty Twenty-Five for adult literacy organizations. It is based on a Figma mockup from the SUNY Oneonta Inclusive Design Lab and keeps most of its look in theme.json, so colors, type and spacing can be changed in Editor > Styles.
+Literacy Volunteers is a block theme built on Twenty Twenty-Five for adult literacy organizations. It was created by the SUNY Oneonta Inclusive Design Lab and keeps most of its look in theme.json, so colors, type and spacing can be changed in Editor > Styles.
 
 Features:
 
 * A palette of dark green, yellow, ink, grays and white, using Twenty Twenty-Five's color slugs so the parent's templates and patterns pick it up. A lighter brand green is used only for large headings on Style 4.
 * Five section styles (Style 1 to Style 5) for Group, Columns, Column and Cover blocks. Each sets text, link, button and form field colors that meet WCAG 2.2 AA contrast.
 * When a section style is applied to a Cover block in the editor, the overlay switches to that style's background at 80% or more opacity, so text stays readable over any photo.
-* Outline buttons take the color of the filled button in the same section.
-* Form fields (search, text, email and others) have a translucent fill that adapts to the section they sit in. The Search block keeps a rounded input.
-* Block styles: "Eyebrow" (paragraph and heading) and "Arrow link" (paragraph).
-* Visible keyboard focus outlines on links and buttons.
-
-Patterns:
-
-* Hero: a full-width photo with a centered translucent green panel, heading, text and two buttons.
-* Intro and 3 cards: an eyebrow, a heading and three cards.
-* About Us: a yellow section with an image, text, social links and two buttons.
-* Get Involved Cards: an intro and three equal-height cards for learners, tutors and volunteers, each ending in an arrow link.
-
-The companion plugin "TEC Upcoming Events Pattern" adds two upcoming-events patterns for The Events Calendar. It is optional; the theme works without it.
 
 == Installation ==
 
