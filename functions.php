@@ -74,3 +74,23 @@ add_action(
 		}
 	}
 );
+
+/**
+ * The arrow for the "Arrow link" paragraph style. Loaded only on pages that
+ * use a Paragraph block.
+ */
+add_action(
+	'init',
+	function () {
+		$path = '/assets/css/arrow-link.css';
+		wp_enqueue_block_style(
+			'core/paragraph',
+			array(
+				'handle' => 'literacy-volunteers-arrow-link',
+				'src'    => get_stylesheet_directory_uri() . $path,
+				'path'   => get_stylesheet_directory() . $path,
+				'ver'    => (string) filemtime( get_stylesheet_directory() . $path ),
+			)
+		);
+	}
+);

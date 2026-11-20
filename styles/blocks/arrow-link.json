@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"version": 3,
+	"title": "Arrow link",
+	"slug": "arrow-link",
+	"blockTypes": [ "core/paragraph" ],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small",
+			"fontWeight": "600",
+			"letterSpacing": "0.08em",
+			"textTransform": "uppercase"
+		},
+		"elements": {
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				}
+			}
+		}
+	}
+}

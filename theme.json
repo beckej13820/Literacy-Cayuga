@@ -64,6 +64,16 @@
 					"letterSpacing": "-0.02em"
 				}
 			},
+			"link": {
+				":focus-visible": {
+					"outline": {
+						"color": "currentColor",
+						"offset": "2px",
+						"style": "solid",
+						"width": "2px"
+					}
+				}
+			},
 			"button": {
 				"border": {
 					"radius": "4px"

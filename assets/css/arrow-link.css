@@ -1,0 +1,29 @@
+/*
+ * The "Arrow link" paragraph style (styles/blocks/arrow-link.json) sets the
+ * type. These rules add the arrow, which theme.json can't express.
+ */
+
+/*
+ * Decorative arrow after the link. The first `content` is a fallback for
+ * browsers without alt text in `content`; the second gives the arrow empty
+ * alt text so screen readers don't announce "right arrow".
+ */
+.is-style-arrow-link a::after {
+	content: "\2192";
+	content: "\2192" / "";
+	display: inline-block;
+	margin-inline-start: 0.5em;
+	transition: transform 0.2s ease;
+}
+
+/* Nudge the arrow on hover and keyboard focus, a small cue that it's a link. */
+.is-style-arrow-link a:is(:hover, :focus-visible)::after {
+	transform: translateX(0.25em);
+}
+
+/* No nudge animation for visitors who ask for less motion. */
+@media (prefers-reduced-motion: reduce) {
+	.is-style-arrow-link a::after {
+		transition: none;
+	}
+}
