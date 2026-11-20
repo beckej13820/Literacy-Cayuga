@@ -130,17 +130,17 @@
 			},
 			"h1": {
 				"color": {
-					"text": "var(--wp--custom--color--brand-green)"
+					"text": "var:preset|color|brand-green"
 				}
 			},
 			"h2": {
 				"color": {
-					"text": "var(--wp--custom--color--brand-green)"
+					"text": "var:preset|color|brand-green"
 				}
 			},
 			"h3": {
 				"color": {
-					"text": "var(--wp--custom--color--brand-green)"
+					"text": "var:preset|color|brand-green"
 				}
 			}
 		}

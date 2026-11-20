@@ -25,6 +25,11 @@
 					"slug": "accent-2"
 				},
 				{
+					"color": "#2D8739",
+					"name": "Brand Green",
+					"slug": "brand-green"
+				},
+				{
 					"color": "#EAECED",
 					"name": "Light Gray",
 					"slug": "accent-3"
@@ -45,11 +50,6 @@
 					"slug": "accent-6"
 				}
 			]
-		},
-		"custom": {
-			"color": {
-				"brand-green": "#2F8D3C"
-			}
 		}
 	},
 	"styles": {
